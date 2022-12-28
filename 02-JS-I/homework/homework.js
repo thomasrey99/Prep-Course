@@ -29,6 +29,7 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
   let string=str;
+
   return string;
 }
 
@@ -37,6 +38,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   let suma= x + y;
+
   return suma;
   
 }
@@ -45,6 +47,7 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   let resta= x - y;
+
   return resta;
 }
 
@@ -52,6 +55,7 @@ function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   let producto= x * y;
+
   return producto;
 }
 
@@ -59,6 +63,7 @@ function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   let cociente=x/y;
+
   return cociente;
 }
 
@@ -67,6 +72,7 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   let igualdad= (x == y);
+
   return igualdad;
 }
 
@@ -74,13 +80,18 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  let comparar = (str1.length)==(str2.length)
+
+  return comparar;
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  let menorAnoventa= (num < 90);
+
+  return menorAnoventa;
   
 }
 
@@ -88,12 +99,17 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  let mayorAcincuenta= num > 50;
+
+  return mayorAcincuenta;
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  let resto= x % y;
+
+  return resto;
   
 }
 
@@ -101,50 +117,72 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  let par= (num%2)==0;
+
+  return par;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  let impar= (num%2)!=0;
+
+  return impar;
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+  let elevar= math.pow(num, 2);
+
+  return elevar;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  let elevarCubo= math.pow(num, 3);
+
+  return elevarCubo;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  let elevarExponente= math.pow(num, exponent);
+
+  return elevarExponente;
+
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  let redondear=math.round(num);
+
+  return redondear;
+
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+
+  let ascender= math.ceil(num);
+
+  return ascender;
+
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+
+  let numAzar= Math.random();
+
+  return numAzar;
   
 }
 
@@ -153,20 +191,45 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if(numero>0){
+
+    const positivo="Es positivo";
+
+    return positivo;
+
+  }else if(numero<0){
+
+    const negativo= "Es negativo";
+
+    return negativo;
+
+  }else if(numero==0){
+
+    const cero= false;
+
+    return cero;
+
+  }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  let exclamar=`${str}!`
+
+  return exclamar;
+
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  let nombreCompleto= `${nombre} ${apellido}`;
+
+  return nombreCompleto;
+
 }
 
 function obtenerSaludo(nombre) {
@@ -174,25 +237,38 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   
+  let saludo= "hola " + nombre + "!";
+
+  return saludo;
+
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  const areaRectangulo= alto * ancho;
+
+  return areaRectangulo;
+
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  const perimetroCuadrado= lado * 4;
+
+  return perimetroCuadrado;
+
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  const areaTriangulo= (base * altura)/2;
+
+  return areaTriangulo;
 
 }
 
@@ -201,6 +277,10 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+
+  const EuroAdolar= euro *1.20;
+
+  return EuroAdolar;
   
 }
 
@@ -211,7 +291,39 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  const vocal="es voscal";
+
+  const datoIncorrecto="dato incorrecto"
+
+  if ((letra==A)){
+
+    return vocal;
+
+  }else if ((letra==E)){
+
+    return vocal;
+
+  }else if ((letra==I)){
+
+    return vocal;
+
+  }else if ((letra==O)){
+
+    return vocal;
+
+  }else if ((letra==U)){
+
+    return vocal;
+
+  }else if ((letra.length)>1){
+
+    return datoIncorrecto;
+
+  }else {
+
+    return datoIncorrecto;
+
+  }
 }
 
 
