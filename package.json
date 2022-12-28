@@ -34,5 +34,14 @@
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-highlightjs": "^3.5.0",
     "simple-git": "^2.45.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasrey99/Prep-Course.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/thomasrey99/Prep-Course/issues"
+  },
+  "homepage": "https://github.com/thomasrey99/Prep-Course#readme"
 }

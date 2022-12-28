@@ -135,7 +135,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  let elevar= math.pow(num, 2);
+  let elevar=  Math.pow(num, 2);
 
   return elevar;
 }
@@ -143,7 +143,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  let elevarCubo= math.pow(num, 3);
+  let elevarCubo= Math.pow(num, 3);
 
   return elevarCubo;
 }
@@ -151,7 +151,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  let elevarExponente= math.pow(num, exponent);
+  let elevarExponente= Math.pow(num, exponent);
 
   return elevarExponente;
 
@@ -160,7 +160,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  let redondear=math.round(num);
+  let redondear= Math.round(num);
 
   return redondear;
 
@@ -170,7 +170,7 @@ function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
 
-  let ascender= math.ceil(num);
+  let ascender= Math.ceil(num);
 
   return ascender;
 
@@ -237,7 +237,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   
-  let saludo= "hola " + nombre + "!";
+  let saludo= `Hola ${nombre}!`;
 
   return saludo;
 
@@ -291,27 +291,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  const vocal="es voscal";
+  const vocal="Es vocal";
 
-  const datoIncorrecto="dato incorrecto"
+  const datoIncorrecto="Dato incorrecto"
 
-  if ((letra==A)){
-
-    return vocal;
-
-  }else if ((letra==E)){
-
-    return vocal;
-
-  }else if ((letra==I)){
-
-    return vocal;
-
-  }else if ((letra==O)){
-
-    return vocal;
-
-  }else if ((letra==U)){
+  if ((letra=="a")||(letra=="e")||(letra=="i")||(letra=="o")||(letra=="u")){
 
     return vocal;
 
