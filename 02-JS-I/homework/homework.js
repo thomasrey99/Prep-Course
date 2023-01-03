@@ -71,7 +71,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  let igualdad= (x == y);
+  let igualdad= (x === y);
 
   return igualdad;
 }
@@ -117,7 +117,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  let par= (num%2)==0;
+  let par= (num%2)===0;
 
   return par;
 }
@@ -295,7 +295,7 @@ function esVocal(letra){
 
   const datoIncorrecto="Dato incorrecto"
 
-  if ((letra=="a")||(letra=="e")||(letra=="i")||(letra=="o")||(letra=="u")){
+  if ((letra==="a")||(letra==="e")||(letra==="i")||(letra==="o")||(letra==="u")){
 
     return vocal;
 
